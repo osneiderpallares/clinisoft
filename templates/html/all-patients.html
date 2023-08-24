@@ -1,0 +1,276 @@
+{% extends "/basic/base.html" %}
+{% block content %}
+<body>
+  <div class="themebody-wrap">
+    <!-- breadcrumb start-->
+    <div class="codex-breadcrumb">
+      <div class="container-fluid">
+        <div class="breadcrumb-contain">
+          <div class="left-breadcrumb">
+            <ul class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">
+                  <h1>Dashboard</h1>
+                </a></li>
+              <li class="breadcrumb-item"><a href="javascript:void(0);">application</a></li>
+              <li class="breadcrumb-item active"><a href="javascript:void(0);">Datatable Advance</a></li>
+            </ul>
+          </div>
+          <div class="right-breadcrumb">
+            <ul>
+              <li>
+                <div class="bread-wrap"><i class="fa fa-clock-o"></i></div><span class="liveTime"></span>
+              </li>
+              <li>
+                <div class="bread-wrap"><i class="fa fa-calendar"></i></div><span class="getDate"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb end-->
+    <!-- theme body start-->
+    <div class="theme-body codex-chat">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body"><a class="btn btn-primary float-end mb-15" href="javascript:void(0);"
+                  data-bs-toggle="modal" data-bs-target="#patientmodalmodal">Add Patient</a>
+                  <!-- <table class="patients-tbl table" style="width:100%;">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Birth Date </th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Blood Group</th>
+                        <th>Phone No</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/1.jpg" alt=""><span class="ml-10">Tiger Nixon</span></div>
+                        </td>
+                        <td>10/12/1998</td>
+                        <td>25</td>
+                        <td>Male</td>
+                        <td>A+</td>
+                        <td>+1 50 456589</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/2.jpg" alt=""><span class="ml-10">Garrett Winters</span></div>
+                        </td>
+                        <td>12/05/1995</td>
+                        <td>28</td>
+                        <td>Female</td>
+                        <td>o+</td>
+                        <td>+1 60 508089</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-success">Recovered</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/3.jpg" alt=""><span class="ml-10">Ashton Cox</span></div>
+                        </td>
+                        <td>05/05/1990</td>
+                        <td>33</td>
+                        <td>Male</td>
+                        <td>B+</td>
+                        <td>+1 80 606590</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-warning">In Treatment</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/4.jpg" alt=""><span class="ml-10">Cedric Kelly</span></div>
+                        </td>
+                        <td>20/08/1985</td>
+                        <td>35</td>
+                        <td>Female </td>
+                        <td>A+</td>
+                        <td>+1 50 456589</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-warning">In Treatment</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/5.jpg" alt=""><span class="ml-10">Brielle Williamson</span></div>
+                        </td>
+                        <td>20/01/2000</td>
+                        <td>20</td>
+                        <td>Male</td>
+                        <td>B-</td>
+                        <td>+1 20 302860</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/6.jpg" alt=""><span class="ml-10">Rhona Davidson</span></div>
+                        </td>
+                        <td>02/06/2015</td>
+                        <td>8</td>
+                        <td>Female</td>
+                        <td>A-</td>
+                        <td>+1 22 443346</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-success">Recovered</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/7.jpg" alt=""><span class="ml-10">Jena Gaines</span></div>
+                        </td>
+                        <td>25/02/2012</td>
+                        <td>23</td>
+                        <td>Male</td>
+                        <td>B+</td>
+                        <td>+1 18 982234</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/8.jpg" alt=""><span class="ml-10">Charde Marshall</span></div>
+                        </td>
+                        <td>30/05/2005</td>
+                        <td>8</td>
+                        <td>Male</td>
+                        <td>A+</td>
+                        <td>+1 28 353089</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-warning">In Treatment</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/9.jpg" alt=""><span class="ml-10">Paul Byrd</span></div>
+                        </td>
+                        <td>10/12/1998</td>
+                        <td>25</td>
+                        <td>Male</td>
+                        <td>A+</td>
+                        <td>+1 26 282296</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/10.jpg" alt=""><span class="ml-10">Gloria Little</span></div>
+                        </td>
+                        <td>30/05/1995</td>
+                        <td>35</td>
+                        <td>Female</td>
+                        <td>A+</td>
+                        <td>+1 30 456589</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center"><img class="img-fluid rounded-50 w-40" src="../assets/images/avtar/11.jpg" alt=""><span class="ml-10">Dai Rios</span></div>
+                        </td>
+                        <td>10/12/1998</td>
+                        <td>25</td>
+                        <td>Male</td>
+                        <td>A+</td>
+                        <td>+1 50 456589</td>
+                        <td>example@email.com</td>
+                        <td> <span class="badge badge-info">New Patient</span></td>
+                        <td><a href="edit-patient.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                  {{ dfhtml|safe }}
+              </div>
+              <!-- Patient Modal Start-->
+              <div class="modal fade" id="patientmodalmodal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Add New Doctor </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label class="form-label">Name</label>
+                            <input class="form-control" type="text" placeholder="Patient Name">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label class="form-label">Date Of Birth</label>
+                            <input class="datepicker-here form-control" type="text" placeholder="DD/MM/YYYY"
+                              data-date-format="dd/mm/yyyy" data-language="en">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label class="form-label">Age</label>
+                            <input class="form-control" type="text" required="" placeholder="Age">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <div class="form-label">Gender </div>
+                            <select class="form-select form-control hidesearch" name="gender[]">
+                              <option value="Gender">Select Gender</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <div class="form-label">Blood Group</div>
+                            <select class="form-select form-control hidesearch" name="bloodgroup[]">
+                              <option value="">Select Blood Group</option>
+                              <option value="A+">A+</option>
+                              <option value="A-">A-</option>
+                              <option value="B+">B+</option>
+                              <option value="B-">B-</option>
+                              <option value="O+">O+</option>
+                              <option value="O-">O-</option>
+                              <option value="AB+">AB+</option>
+                              <option value="AB-">AB-</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <div class="form-label">Phone </div>
+                            <input class="form-control" type="text" required="" placeholder="Phone Number">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label class="form-label">Email</label>
+                            <input class="form-control" type="text" required="" placeholder="Email Id">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" type="button">Save</button>
+                      <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Patient Modal Start-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- theme body end-->
+  </div>
+</body>
+{% endblock %}
+
+</html>

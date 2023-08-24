@@ -1,0 +1,537 @@
+{% extends "/basic/base.html" %}
+{% block content %}
+<body>
+<div class="themebody-wrap">
+  <!-- breadcrumb start-->
+  <div class="codex-breadcrumb">
+    <div class="container-fluid">
+      <div class="breadcrumb-contain">
+        <div class="left-breadcrumb">
+          <ul class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html"> 
+                <h1>Dashboard</h1></a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0);">Default</a></li>
+          </ul>
+        </div>
+        <div class="right-breadcrumb">
+          <ul>
+            <li>
+              <div class="bread-wrap"><i class="fa fa-clock-o"></i></div><span class="liveTime"></span>
+            </li>
+            <li>
+              <div class="bread-wrap"><i class="fa fa-calendar"></i></div><span class="getDate"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- breadcrumb end-->
+  <!-- theme body start-->
+  <div class="theme-body common-dash" data-simplebar>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card hos-welcome">
+            <div class="card-body">
+              <h3>Welcome to<br>Medixo Hospital</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.       </p><a class="btn btn-secondary" href="javascript:void(0);">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card hosinfo-count">
+                <div class="card-body">
+                  <div class="media">
+                    <div class="icon-wrap bg-warning"><i class="icofont-patient-bed"></i></div>
+                    <div class="count-detail">
+                      <h3><span class="counter mr-5">500</span>Bed</h3>
+                      <p>Total Hospital Beds</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card hosinfo-count">
+                <div class="card-body">
+                  <div class="media">
+                    <div class="icon-wrap bg-secondary"><i class="icofont-doctor"></i></div>
+                    <div class="count-detail">
+                      <h3><span class="counter mr-5">800</span>Doctors</h3>
+                      <p>Available Doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card hosinfo-count">
+                <div class="card-body">
+                  <div class="media">
+                    <div class="icon-wrap bg-success"><i class="icofont-medicine"></i></div>
+                    <div class="count-detail">
+                      <h3><span class="counter mr-5">650</span>Bills</h3>
+                      <p>Pharmacy Medics</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card hosinfo-count">
+                <div class="card-body">
+                  <div class="media">
+                    <div class="icon-wrap bg-info"><i class="icofont-ambulance-cross"></i></div>
+                    <div class="count-detail">
+                      <h3><span class="counter mr-5">900</span>ambulance</h3>
+                      <p>All Ambulance Cars</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-lg-7">
+          <div class="card earning-chart">
+            <div class="card-header">
+              <h4>Hospital Survay</h4>
+              <div class="setting-card action-menu"><a class="action-toggle" href="javascript:void(0)"><i class="codeCopy" data-feather="more-horizontal"></i></a>
+                <ul class="action-dropdown">
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-o"></i>weekly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-check-o"></i>monthly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar"></i>yearly</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="hospitalsurvay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-lg-5">
+          <div class="card">
+            <div class="card-header">
+              <h4>Notifications</h4>
+            </div>
+            <div class="card-body">
+              <ul class="docnoti-list dashnoti-list" data-simplebar>
+                <li>
+                  <div class="media"><img class="rounded-50 w-40" src="/static/images/avtar/1.jpg" alt="">
+                    <div class="media-body">
+                      <h6>Dr. Anna  Send you Photo</h6><span class="text-light">10, Feb ,2023</span>
+                    </div>
+                    <div class="badge badge-primary">10:15 Pm</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"><img class="rounded-50 w-40" src="/static/images/avtar/2.jpg" alt="">
+                    <div class="media-body">
+                      <h6>Dr. Anna  Send you Photo</h6><span class="text-light">05, March ,2023</span>
+                    </div>
+                    <div class="badge badge-primary">09:20 Pm</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"><img class="rounded-50 w-40" src="/static/images/avtar/3.jpg" alt="">
+                    <div class="media-body">
+                      <h6>Dr. Anna  Send you Photo</h6><span class="text-light">01, Jan ,2023</span>
+                    </div>
+                    <div class="badge badge-primary">03:40 Pm</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"><img class="rounded-50 w-40" src="/static/images/avtar/4.jpg" alt="">
+                    <div class="media-body">
+                      <h6>Dr. Anna  Send you Photo</h6><span class="text-light">25, Feb ,2023</span>
+                    </div>
+                    <div class="badge badge-primary">05:26 Am</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer"><a class="btn btn-primary d-block mx-auto btn-lg" href="javascript:void(0)">See All Notification</a></div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-lg-5">
+          <div class="card recentpatient-card">
+            <div class="card-header">
+              <h4>Recent Patient</h4>
+              <div class="setting-card action-menu"><a class="action-toggle" href="javascript:void(0)"><i class="codeCopy" data-feather="more-horizontal"></i></a>
+                <ul class="action-dropdown">
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-o"></i>weekly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-check-o"></i>monthly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar"></i>yearly</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="pt-0">
+                        <div class="media">
+                          <div class="badgeavtar bg-primary">J</div>
+                          <div class="media-body ml-10">
+                            <h6 class="text-default">Jordan Nt</h6>
+                            <p class="text-light">41 Years Old</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="pt-0"><span class="badge badge-success">Recovered</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media">
+                          <div class="badgeavtar bg-secondary">A</div>
+                          <div class="media-body ml-10">
+                            <h6 class="text-default">Angela Nurhayati</h6>
+                            <p class="text-light">41 Years Old</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td> <span class="badge badge-success">New Patient</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media">
+                          <div class="badgeavtar bg-success">T</div>
+                          <div class="media-body ml-10">
+                            <h6 class="text-default">Thomas Jaja</h6>
+                            <p class="text-light">28 Years Old</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td> <span class="badge badge-warning">On Recovery</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media">
+                          <div class="badgeavtar bg-warning">J</div>
+                          <div class="media-body ml-10">
+                            <h6 class="text-default">Jordan Nt</h6>
+                            <p class="text-light">20 Years Old</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td> <span class="badge badge-info">Treatment</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="media">
+                          <div class="badgeavtar bg-info">J</div>
+                          <div class="media-body ml-10">
+                            <h6 class="text-default">Jordan Nt</h6>
+                            <p class="text-light">30 Years Old</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td> <span class="badge badge-warning">On Recovery</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-lg-7">
+          <div class="card toprated-doctor">
+            <div class="card-header">
+              <h4>Top Rated Doctors</h4>
+            </div>
+            <div class="card-body">
+              <div class="ratedoctor-slide">
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/1.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>20 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/2.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>50 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/3.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>30 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/4.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>30 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/5.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>30 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="hosdoct-grid">
+                    <div class="img-wrap"><img class="img-fluid" src="/static/images/avtar/6.jpg" alt=""></div>
+                    <div class="doct-detail">
+                      <h4>Dr. Anna Mull</h4><span> Cardiologists</span>
+                      <p>30 Bowman St, South Windsor, Mt 39508</p>
+                      <ul class="codex-soclist">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card visitor-performance">
+            <div class="card-header">
+              <h4>Operation Success Rate</h4>
+              <div class="setting-card action-menu"><a class="action-toggle" href="javascript:void(0)"><i class="codeCopy" data-feather="more-horizontal"></i></a>
+                <ul class="action-dropdown">
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-o"></i>weekly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-check-o"></i>monthly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar"></i>yearly</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="recoverystatistics"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card visitor-ratetbl">
+            <div class="card-header">
+              <h4>Common Diseases Report</h4>
+              <div class="setting-card action-menu"><a class="action-toggle" href="javascript:void(0)"><i class="codeCopy" data-feather="more-horizontal"></i></a>
+                <ul class="action-dropdown">
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-o"></i>weekly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar-check-o"></i>monthly</a></li>
+                  <li><a href="javascript:void(0);"><i class="fa fa-calendar"></i>yearly</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div id="diseasesreport"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-lg-6">
+          <div class="card patientvisits-tbl">
+            <div class="card-header">
+              <h4>Patient Visits</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" style="width:100%;">
+                  <thead>
+                    <tr>
+                      <th>Doctor Name</th>
+                      <th>visit Date</th>
+                      <th>visit Time </th>
+                      <th>Treatment</th>
+                      <th>Charges</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dr. Tiger Nixon</td>
+                      <td>10/05/2023</td>
+                      <td>09:30 Am</td>
+                      <td>Operation</td>
+                      <td>$80</td>
+                      <td>Resheduled</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Dr. Hal Appeno</td>
+                      <td>05/06/2023</td>
+                      <td>08:00 Am</td>
+                      <td>Check up</td>
+                      <td>$50</td>
+                      <td>Fever</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Dr. Pat Agonia</td>
+                      <td>20/02/2023</td>
+                      <td>10:30 Am</td>
+                      <td>Admit</td>
+                      <td>$75</td>
+                      <td>Ortho</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Dr. Paul Molive</td>
+                      <td>15/08/2023</td>
+                      <td>03:00 Pm</td>
+                      <td> Blood Test</td>
+                      <td>$60</td>
+                      <td>General Check-up</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Dr. Polly Tech</td>
+                      <td>12/07/2023</td>
+                      <td>12:00 Pm</td>
+                      <td>Discharge</td>
+                      <td>$40</td>
+                      <td>Injury</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Dr. Hal Appeno</td>
+                      <td>05/06/2023</td>
+                      <td>08:00 Am</td>
+                      <td>Check up</td>
+                      <td>$50</td>
+                      <td>Fever</td>
+                      <td><a class="text-success" href="edit-doctor.html"><i class="w-18" data-feather="edit"></i></a><a class="text-danger ml-8" href="javascript:void(0);"><i class="w-18" data-feather="trash-2"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-lg-6">
+          <div class="card dash-chat">
+            <div class="card-header">
+              <h4>live caht</h4>
+            </div>
+            <div class="card-body"> 
+              <div class="dash-chatbox">
+                <ul class="chating-list" data-simplebar>
+                  <li>
+                    <div class="user-msgbox">
+                      <div class="media"><img class="img-fluid" src="/static/images/avtar/1.jpg" alt="image">
+                        <div class="media-body">
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="admin-msgbox">
+                      <div class="media">
+                        <div class="media-body">
+                          <p>Adipisicing elit, sed do eiusmod.</p>
+                        </div><img class="img-fluid" src="/static/images/avtar/2.jpg" alt="image">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="admin-msgbox">
+                      <div class="media">
+                        <div class="media-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                        </div><img class="img-fluid" src="/static/images/avtar/2.jpg" alt="image">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="user-msgbox">
+                      <div class="media"><img class="img-fluid" src="/static/images/avtar/1.jpg" alt="image">
+                        <div class="media-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="admin-msgbox">
+                      <div class="media">
+                        <div class="media-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        </div><img class="img-fluid" src="/static/images/avtar/2.jpg" alt="image">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="user-msgbox">
+                      <div class="media"><img class="img-fluid" src="/static/images/avtar/1.jpg" alt="image">
+                        <div class="media-body">
+                          <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="admin-msgbox">
+                      <div class="media">
+                        <div class="media-body">
+                          <p>Adipisicing elit, sed do eiusmod.</p>
+                        </div><img class="img-fluid" src="/static/images/avtar/2.jpg" alt="image">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="userchat-typebox d-flex"><a class="btn btn-primary mr-10"><i data-feather="smile"></i></a>
+                  <input class="form-control" type="text" placeholder="Type a message" value="" autocomplete="off"><a class="btn btn-primary ml-10"><i data-feather="send"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- theme body end-->
+</div>
+</body>
+{% endblock %}
+
+</html>
